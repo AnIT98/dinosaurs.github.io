@@ -1,0 +1,223 @@
+body {
+    background-image: url(../assets/bg.png);
+    backdrop-filter: blur(5px);
+    background-position-y: center;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #fff;
+    /* text-shadow: -1px 0 #000, 0 1px #000, 2px 0 #000, 0 -1px #000; */
+}
+#header {
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+#header nav {
+    background-image: url("../assets/NavbarFrame.png");
+    background-size: cover;
+    height: 60px;
+    background-color: unset !important;
+}
+#header a.nav-link {
+    color: #fff;
+    transition: tranform 0.2s;
+    text-shadow: -1px 0 #000, 0 1px #000, 2px 0 #000, 0 -1px #000;
+}
+#header a.nav-link:hover {
+    transform: scale(1.1); 
+}
+#dinosIntro {
+    background-image: url(../assets/bg.png);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    max-height: 684px;
+    margin-bottom: 50px;
+    background-size: cover;
+}
+#dinosIntro img.dinosLogo {
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+}
+#dinosIntro .team span {
+    padding: 20px;
+    cursor: pointer;
+}
+#dinosIntro .team span img, #dinosIntro .team a img {
+    transition: transform .2s;
+}
+#dinosIntro .team span img:hover, #dinosIntro .team a img:hover {
+    transform: scale(1.2); 
+}
+
+#dinosPros .img-item, #dinosToken .img-item {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.row.houseType {
+    background: #333;
+}
+.img-item {
+    transition: transform 0.2s;
+}
+.img-item:hover {
+    transform: scale(1.1); 
+}
+#dinosHouse, #dinosPros, #dinosToken, #caption, #dinosBG, #dinosNews, #faucet {
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+#dinosPros, #dinosToken {
+    /* padding-top: 100px; */
+    background: #333;
+    background-image: url(../assets/Wall.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#dinosHouse {
+    /* padding-top: 50px; */
+    padding-bottom: 40px;
+    background: #4b3a37;
+    background-image: url(../assets/Wall.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#dinosBG {
+    background-image: url('../assets/Night.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+#dinosNews {
+    background: #274389;
+    
+}
+#dinosNews .bg-l {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image: url(../assets/rec-r.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    
+}
+#dinosNews .bg-r {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image: url(../assets/rec-l.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    
+}
+#dinosPros .row {
+    /* margin-top: 100px; */
+}
+footer span a {
+    font-size: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #fff;
+}
+footer {
+    background-image: url(../assets/Bar_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #471a30;
+    height: 200px;
+    margin-top: -50px;
+}
+#dinosHouse .img-item {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 5%;
+}
+#dinosHouse h4 {
+    color: #ffc107;
+}
+#dinosPros h4, #dinosToken h4 {
+    padding: 30px;
+    color: #ffc107;
+}
+#dinosHouse p, #dinosPros p {
+    font-size: 19px;
+}
+.bg-leaf {
+    background-image: url(../assets/Leaf\ bar\ footer.png);
+    height: 60px;
+    margin-top: -50px;
+}
+#dinosPros .txt, #dinosToken .txt {
+    padding-left: 60px;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+#dinosNews h4 {
+    color: #ffc107;
+}
+
+#dinosNews p {
+    font-size: 18px;
+}
+#header .navbar-brand img {
+    width: 200px;
+    margin-top: 30px;
+}
+
+#faucet {
+    margin-top: 100px;
+    background:#471a30;
+    margin-bottom: 150px;
+    border: 5px solid #ffc1070d;
+    border-radius: 10px;
+}
+#faucet img.faucet-img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+#faucet .fcButton {
+    width: 200px;
+    transition: transform 0.2s;
+}
+#faucet .fcButton:hover {
+    transform: scale(1.1); 
+}
+@media (max-width: 767.98px) { 
+    #header .navbar-brand img {
+        width: 100px;
+        margin-top: 0;
+    }
+    #header nav {
+        height: auto;
+    }
+    #dinosIntro .team a {
+        width: 50%;
+        display: block;
+        float: left;
+        margin: 0 auto;
+    }
+    #dinosPros, #dinosToken {
+        padding-top: 5px;
+    }
+    .txt {
+        padding-left: 20px !important;
+    }
+    #dinosIntro img.dinosLogo {
+        width: 300px;
+    }
+    #dinosNews .bg-l {
+        height: 200px;
+        margin: 0;
+    }
+}

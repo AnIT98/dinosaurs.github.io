@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noth Swap | AMM DeX on Doginals.</title>
+    <link rel="icon" href="./img/noth.png" type="image/gif" sizes="16x16">
+
+    <meta property="og:title" content="Build token swap solution on DRC20. " /> 
+    <meta property="og:description" content="The first DeX on Doginals.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body id="nothSwap">
+    <div class="container">
+    
+        <div class="row align-middle main">
+
+            <div class="bg-logo mt-5 animate__animated animate__fadeIn">
+                <!-- <img class="noth-logo align-middle animate__animated animate__bounceInDown" src="./img/noth.png" alt="" width="100"/> -->
+                
+                 <h1 class="text-center animate__animated animate__bounceInDown text-noth"> N O T H    S W A P </h1>
+                <div class="noth-description">
+                    <span class="type" style="--n:53">
+                        Noth Swap emerges as a trailblazer in the realm of decentralized token swapping solutions on the DRC20.
+                        With a commitment to user experience, security, and community-driven governance,
+                        Noth Swap aims to become a cornerstone in the broader evolution of decentralized finance.
+                    </span>
+                </div>
+            </div>
+            
+
+            <div class="action mt-3">
+                <div class="all-action">
+                    <a href="#" class="whitepaper animate__animated animate__bounceInLeft"></a>
+                    <a href="#" class="launchpad animate__animated animate__bounceInRight" data-bs-toggle="modal" data-bs-target="#launchpad"></a>
+                    <a href="#" class="dApp animate__animated animate__bounceInUp" data-bs-toggle="modal" data-bs-target="#dApp"></a>
+                </div>
+            </div>
+            <div class="social mt-3">
+                <a href="https://t.me/nothswap" target="_blank"><img src="./img/tg.png" alt="" width="50"></a>
+                <a href="https://twitter.com/nothswap" target="_blank"><img src="./img/tw.png" alt="" width="50"></a>
+            </div>
+        </div>
+         <!-- whitepaper -->
+        <div class="modal fade" id="launchpad" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Token: <span>noth</span></br>
+                    Total Supply: <span>8,888,888</span></br>
+                    Allocation: <span>3,000,000</span></br>
+                    Price launchpad: <span>0.075 doge</span></br>
+                    Public Price: <span>0.15 noth</span></br></br>
+
+                    Launchpad will be announced later.
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- end whitepaper -->
+         <!-- whitepaper -->
+        <div class="modal fade" id="dApp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Dapp is developing. Coming soon !
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- end whitepaper -->
+    </div>
+   
+</body>
+<script>
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus()
+    })
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>

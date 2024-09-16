@@ -125,21 +125,8 @@ async function main() {
     
     const c = localStorage.getItem("connected")
     
-    $("#joinGame").click(async function (e) { 
-        if(c == "true") {
-            window.open("./game");
-        }
-        try {
-            if(connector._wallet === null) {
-                await connector.connect(walletConnectionSource) 
-                localStorage.setItem("connected",true)
-                window.open("./game");
-            }
-        } catch (error) {
-            alert("Please install TonKeeper Extension !!")
-        }
-        
-        
+    $("#joinGame").click(async function (e) {
+        alert("Coming soon !!")
     });
     const unsubscribe = connector.onStatusChange(
         async walletInfo => {
